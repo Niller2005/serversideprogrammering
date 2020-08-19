@@ -42,6 +42,7 @@
 > - Du kan opdatere en service ad gangen og komme tæt på "near-zero" downtime
 > - Nemt at adoptere nye teknologier
 > - Kan skalere hver service for sig selv
+> - Kan nemt distrubere globalt
 > - Nemt at automatisere skalering
 > - Ikke låst til en kodebase, hvilket kan gøre det nemmere at finde folk
 >
