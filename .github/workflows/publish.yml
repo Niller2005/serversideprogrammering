@@ -23,15 +23,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Publish PDF Document
-      uses: shrink/actions-document-publish@v1
-      id: publish-document
-      with:
-        sources: 'README.md'
+    - uses: mkrakowitzer/actions-makepdfs@master
+      if: github.ref == 'refs/heads/master'
     - name: Upload Document
       uses: actions/upload-artifact@v2
-      id: upload-document
       with:
-        name: 'document.pdf'
-        path: ${{ steps.publish-document.outputs.pdf }}
+        name: platform-architecture-docs
+        path: tmp
 
 
